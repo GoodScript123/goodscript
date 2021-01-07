@@ -1,10 +1,15 @@
 圈x食用方法：
 (surge大户和loon自行类推)
 -----
-重写-引用，添加以下链接获取cookie：
-https://raw.githubusercontent.com/GoodScript123/goodscript/main/qqreads/qqreadsgetcookie.conf
-重写标签自行备注
+1、添加重写：
+-----
+[rewrite_remote]下粘贴以下重写
 
+#企鹅阅读cookie获取
+https://raw.githubusercontent.com/GoodScript123/goodscript/main/qqreads/qqreadsgetcookie.conf, tag=企鹅阅读cookie获取, update-interval=86400, opt-parser=false, enabled=true
+-----
+2、获取cookie
+-----
 通过 https://m.q.qq.com/a/s/d3eacc70120b9a37e46bad408c0c4c2a
 或者直接qq内搜索[企鹅阅读]小程序
 
@@ -19,11 +24,12 @@ https://raw.githubusercontent.com/GoodScript123/goodscript/main/qqreads/qqreadsg
 
 成功获取后可以将重写禁用
 -----
-[task_local]添加定时任务
+3、添加定时任务
+-----
+[task_local]添加以下定时任务
 
 # 企鹅读书
 */20 * * * * https://raw.githubusercontent.com/GoodScript123/goodscript/main/qqreads/qqreads.js, tag=企鹅读书, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/qqreads.png, enabled=true
-
 ------------------------------------
 Secrets对应关系如下，多账号默认换行
 
